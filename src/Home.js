@@ -67,7 +67,7 @@ function Home() {
             Delete Post
           </button>
           <button
-            className="btn btn-danger navbar-btn custom"
+            className="btn btn-dark navbar-btn custom"
             onClick={() => {
               localStorage.clear();
               navigate("/");

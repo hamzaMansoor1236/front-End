@@ -70,32 +70,11 @@ function DeletePost() {
               </b>
             </a>
           </div>
+         
+        
+        
           <button
-            className="btn btn-success navbar-btn"
-            onClick={() => {
-              navigate("/createpost");
-            }}
-          >
-            Create Post
-          </button>
-          <button
-            className="btn btn-success navbar-btn"
-            onClick={() => {
-              navigate("/updatepost");
-            }}
-          >
-            Update Post
-          </button>
-          <button
-            className="btn btn-primary navbar-btn custom"
-            onClick={() => {
-              navigate("/home");
-            }}
-          >
-            Back
-          </button>
-          <button
-            className="btn btn-danger navbar-btn custom"
+            className="btn btn-dark navbar-btn custom"
             onClick={() => {
               localStorage.clear();
               navigate("/");
@@ -109,7 +88,7 @@ function DeletePost() {
       <br></br>
 
       <div>
-        <label>Enter the id</label>
+        <label><b>Enter the id</b></label>
         <input
           type="number"
           className="form-control"
@@ -121,6 +100,14 @@ function DeletePost() {
       <button className="btn btn-danger navbar-btn" onClick={dealClick}>
         Delete Post
       </button>
+      <button
+            className="btn btn-primary navbar-btn custom mx-3"
+            onClick={() => {
+              navigate("/home");
+            }}
+          >
+            Back
+          </button>
       <br></br>
       <br></br>
       <br></br>

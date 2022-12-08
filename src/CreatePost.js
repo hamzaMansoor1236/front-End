@@ -95,13 +95,13 @@ function CreatePost() {
             
           </div>
           
-          <button className="btn btn-danger navbar-btn custom" onClick={ ()=>{
+          <button className="btn btn-dark navbar-btn custom" onClick={ ()=>{
              localStorage.clear();
              navigate("/");}}>Logout</button>
         </div>
       </nav>
       <br></br>
-      <h3 className="text-primary">Create post</h3>
+      <h3 className="text-primary">Create Post</h3>
       
       <div>
         <label>
@@ -126,7 +126,7 @@ function CreatePost() {
       <br></br>
       <div>
       <button className="btn btn-success navbar-btn"  onClick={CreatePost} >Create Post</button>
-      <button className="btn btn-success navbar-btn mx-4"  onClick={()=>{navigate("/home");}} >Back to Posts</button>
+      <button className="btn btn-primary navbar-btn mx-4"  onClick={()=>{navigate("/home");}} >Back to Posts</button>
 
       </div>
       <br></br>
