@@ -29,7 +29,7 @@ function CreatePost() {
       .then((response) => response.json())
       .then((data) => {
        
-        post.id=data.length+1;
+        post.id=(data[data.length-1].id)+1;
 
         console.log(post.id);
       });
